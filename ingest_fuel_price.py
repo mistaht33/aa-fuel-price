@@ -70,6 +70,7 @@ def wrangle_data(data: list):
 
         }}
     fuel_df.replace(remap, inplace=True)
+    fuel_df.to_csv('fuel_prices.csv', index=False)
 
 
 if __name__ == '__main__':
